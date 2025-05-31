@@ -1,6 +1,3 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import GoToTopButton from "../components/GoToTopButton";
 import CommitteeMember from "../components/CommitteeMember";
 
 const members = [
@@ -17,25 +14,20 @@ const members = [
 
 const placeholderImg = "https://cdn.vectorstock.com/i/500p/29/52/faceless-male-avatar-in-hoodie-vector-56412952.jpg";
 
-export default function Committe() {
+export default function Committee() {
   return (
-    <div className="bg-gradient-to-br from-slate-100 via-violet-100 to-fuchsia-100">
-      <Header />
-      <main className="pt-24">
-        <p className="text-5xl font-bold text-[#5004a0] text-center mt-5">Club Committee</p>
-        {members.map((member, i) => (
-          <CommitteeMember
-            key={i}
-            name={member.name}
-            position={member.position}
-            quote={member.quote}
-            image={placeholderImg}
-            flip={member.flip}
-          />
-        ))}
-      </main>
-      <GoToTopButton />
-      <Footer />
-    </div>
+    <main className="pt-24 overflow-hidden">
+      <p className="text-5xl font-bold text-[#5004a0] text-center mt-5">Club Committee</p>
+      {members.map((member, i) => (
+        <CommitteeMember
+          key={i}
+          name={member.name}
+          position={member.position}
+          quote={member.quote}
+          image={placeholderImg}
+          flip={member.flip}
+        />
+      ))}
+    </main>
   );
 }

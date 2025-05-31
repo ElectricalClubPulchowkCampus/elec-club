@@ -1,12 +1,19 @@
-# React + Vite
+# Full Electrical Club React App Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Structure of the app
 
-Currently, two official plugins are available:
+ - **📁 dist** : auto generated. contains production ready version of app, no need for manual editing
+ - **📁 node_modules** : Has all the installed dependencies like React, Router, Vite, etc. No need to touch or edit
+ - **📁 public** : for static files like favicon and images 
+ - **📁 src** : Heart of the app
+    - **📁 assets** : Contains images
+    - **📁 components** : Contains different components of the app such as header, footer, gototop button, etc.
+    - **📁 pages** : Contains the pages for the site, linked via routing.
+    - **⚛️ App.jsx** - The main layout and routing file. Defines how everything comes together
+    - **⚛️ Main.jsx** - Entry point of the app
+    - **📄 index.css** - Global css, tailwind imported here
+- **📄 index.html** - single HTML file used by vite
+- **📄 package.json** - contains dependencies, scripts, name, version, etc.
+- **📄 package-lock.json** - auto generated, locks exact dependencies versions
+- **📄 vite.config.js** - Build tool, has base url and plugins.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

@@ -15,25 +15,25 @@ export default function Header() {
             <span className="text-gray-700 text-sm font-normal">Pulchowk Campus</span>
           </div>
         </div>
-      <ul
-        className={`${
-          menuOpen ? 'flex' : 'hidden'
-        } flex-col space-y-2 absolute bg-white/50 top-20 left-0 right-0 p-4 rounded-b-lg shadow-md 
-          md:static md:flex md:flex-row md:space-x-6 md:space-y-0 md:bg-transparent md:p-0 md:shadow-none 
-          text-[#444054] font-medium`}
-      >
-          <li><Link to="/" className="hover:text-[#9333ea]">Home</Link></li>
-          <li><Link to="/events" className="hover:text-[#9333ea]">Events</Link></li>
-          <li><Link to="/committee" className="hover:text-[#9333ea]">Committee</Link></li>
-          <li><Link to="/testimonials" className="hover:text-[#9333ea]">Testimonials</Link></li>
-          <li><Link to="/contact" className="hover:text-[#9333ea]">Contact Us</Link></li>
+        <ul
+          className={`${
+            menuOpen ? 'flex' : 'hidden'
+          } flex-col space-y-2 absolute bg-white/50 top-20 left-0 right-0 p-4 rounded-b-lg shadow-md 
+            md:static md:flex md:flex-row md:space-x-6 md:space-y-0 md:bg-transparent md:p-0 md:shadow-none 
+            text-[#444054] font-medium`}
+        >
+          <li><Link to="/" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Home</Link></li>
+          <li><Link to="/events" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Events</Link></li>
+          <li><Link to="/committee" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Committee</Link></li>
+          <li><Link to="/testimonials" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Testimonials</Link></li>
+          <li><Link to="/contact" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Contact Us</Link></li>
         </ul>
-      <button
-        onClick={() => setMenuOpen(!menuOpen)}
-        className="md:hidden text-gray-700 font-extrabold focus:outline-none hover:text-[#9333ea]"
-      >
-        ☰
-      </button>
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-gray-700 font-extrabold focus:outline-none hover:text-[#9333ea]"
+        >
+          ☰
+        </button>
       </nav>
     </header>
   );
