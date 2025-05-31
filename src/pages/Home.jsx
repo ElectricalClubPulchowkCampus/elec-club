@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="my-24 flex flex-col justify-center md:h-[80vh] md:my-10">
+        <div className="my-24 flex flex-col justify-center md:h-[80vh] md:my-10 md:pt-8">
           <div className="text-5xl font-bold text-[#5004a0] text-center">Electrical Club in Pulchowk Campus</div>
           <div className="flex flex-row flex-wrap p-10">
             <img src={logo} alt="club-logo" className="w-[60%] md:w-[30%] object-contain m-auto" />
