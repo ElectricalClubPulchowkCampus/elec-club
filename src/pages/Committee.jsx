@@ -1,4 +1,6 @@
 import CommitteeMember from "../components/CommitteeMember";
+import {motion} from "framer-motion";
+
 
 const members = [
   { name: "Dikshant Dahal", position: "President", quote: "Quote", flip: false },
@@ -16,8 +18,16 @@ const placeholderImg = "https://cdn.vectorstock.com/i/500p/29/52/faceless-male-a
 
 export default function Committee() {
   return (
-    <main className="pt-24 overflow-hidden">
-      <p className="text-5xl font-bold text-[#5004a0] text-center mt-5">Club Committee</p>
+    <main className="pt-24 overflow-x-hidden overflow-y-hidden">
+      <motion.p 
+        className="text-5xl font-bold text-[#5004a0] text-center mt-5"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}  
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        Club Committee
+      </motion.p>
       {members.map((member, i) => (
         <CommitteeMember
           key={i}

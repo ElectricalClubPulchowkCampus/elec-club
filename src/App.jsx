@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Committee from "./pages/Committee";
+import Events from "./pages/Events";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GoToTopButton from "./components/GoToTopButton";
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/committee" element={<Committee />} />
+          <Route path="/events" element={<Events />}/>
         </Routes>
         <Footer />
         <GoToTopButton />

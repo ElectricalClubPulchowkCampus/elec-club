@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#5004a0]/85 text-white">
+    <footer className="bg-[#5004a0]/85 text-white mt-10">
       <div className="p-10 md:p-24 w-full flex flex-col md:flex-row justify-center md:justify-between">
         <div className="flex flex-col items-center">
           <p className="text-2xl font-bold text-center">Electrical Club, Pulchowk Campus</p>

@@ -34,7 +34,7 @@ export default function Home() {
 
         <motion.div
           className="my-24 flex flex-col justify-center md:h-[80vh] md:my-10 md:pt-8"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}  
           transition={{ duration: 0.8, ease: "easeOut" }}
