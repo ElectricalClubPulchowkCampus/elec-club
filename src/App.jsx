@@ -3,10 +3,12 @@ import Home from "./pages/Home";
 import Committee from "./pages/Committee";
 import Events from "./pages/Events";
 import Media from "./pages/Media";
+import Faqs from "./pages/Faqs";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GoToTopButton from "./components/GoToTopButton";
 import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path="/committee" element={<Committee />} />
           <Route path="/events" element={<Events />}/>
           <Route path="/media" element={<Media />}/>
+          <Route path="/faqs" element={<Faqs />}/>
         </Routes>
         <Footer />
         <GoToTopButton />

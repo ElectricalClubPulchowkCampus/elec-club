@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/elec-club-logo.svg";
 import {useState} from 'react';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation(); 
 
   return (
     <header>
@@ -23,11 +24,24 @@ export default function Header() {
             text-[#444054] font-bold md:font-medium`}
           style={{fontSize: "clamp(12px, 2vw, 16px)"}}
         >
-          <li><Link to="/" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Home</Link></li>
+          <li>
+            <Link
+              to="/"
+              onClick={() => {
+                setMenuOpen(false);
+                if (location.pathname === "/") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
+              className="hover:text-[#9333ea]"
+            >
+              Home
+            </Link>
+          </li>
           <li><Link to="/events" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Events</Link></li>
-          <li><Link to="/committee" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Committee</Link></li>
-          <li><Link to="/testimonials" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Testimonials</Link></li>
           <li><Link to="/media" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Media</Link></li>
+          <li><Link to="/committee" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Committee</Link></li>
+          {/* <li><Link to="/testimonials" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Testimonials</Link></li> */}
           <li><Link to="/faqs" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">FAQs</Link></li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Contact Us</Link></li>
         </ul>
