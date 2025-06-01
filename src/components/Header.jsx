@@ -19,13 +19,16 @@ export default function Header() {
           className={`${
             menuOpen ? 'flex' : 'hidden'
           } flex-col space-y-2 absolute bg-white/50 top-20 left-0 right-0 p-4 rounded-b-lg shadow-md 
-            md:static md:flex md:flex-row md:space-x-6 md:space-y-0 md:bg-transparent md:p-0 md:shadow-none 
-            text-[#444054] font-medium`}
+            md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:shadow-none 
+            text-[#444054] font-bold md:font-medium`}
+          style={{fontSize: "clamp(12px, 2vw, 16px)"}}
         >
           <li><Link to="/" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Home</Link></li>
           <li><Link to="/events" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Events</Link></li>
           <li><Link to="/committee" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Committee</Link></li>
           <li><Link to="/testimonials" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Testimonials</Link></li>
+          <li><Link to="/media" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Media</Link></li>
+          <li><Link to="/faqs" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">FAQs</Link></li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Contact Us</Link></li>
         </ul>
         <button

@@ -22,8 +22,8 @@ export default function Committee() {
       <motion.p 
         className="text-5xl font-bold text-[#5004a0] text-center mt-5"
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}  
+        animate={{ opacity: 1, y: 0 }}
+        viewport={{once:true, amount: 0.01 }}  
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         Club Committee
@@ -31,6 +31,7 @@ export default function Committee() {
       {members.map((member, i) => (
         <CommitteeMember
           key={i}
+          number={i}
           name={member.name}
           position={member.position}
           quote={member.quote}

@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router basename='/elec-club-react'>
+    <Router basename='/elec-club'>
       <App />
     </Router>
   </React.StrictMode>

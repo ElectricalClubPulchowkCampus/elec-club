@@ -33,17 +33,17 @@ export default function Home() {
         </div>
 
         <motion.div
-          className="my-24 flex flex-col justify-center md:h-[80vh] md:my-10 md:pt-8"
+          className="my-24 flex flex-col justify-center h-auto md:my-10 md:pt-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}  
+          viewport={{once:true, amount: 0.2  }}  
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="text-5xl font-bold text-[#5004a0] text-center">Electrical Club in Pulchowk Campus</div>
           <div className="flex flex-row flex-wrap p-10">
             <img src={logo} alt="club-logo" className="w-[60%] md:w-[30%] object-contain m-auto" />
-            <div className="text-2xl w-full md:w-[50%] text-center mt-10 md:m-auto">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <div className="text-base md:text-xl w-full md:w-[50%] text-center mt-10 md:m-auto">
+              The Electrical Club at the Department of Electrical Engineering, IOE Pulchowk, is a vibrant student-led organization dedicated to bridging the gap between theoretical learning and practical skills for aspiring electrical engineers. Founded by proactive students, the club fosters creativity, teamwork, and leadership by offering diverse workshops such as home electrification, inverter design, Arduino programming, Proteus simulation, PCB design, and MATLAB/Simulink training. It also hosts a podcast featuring alumni who share valuable career insights. Managed by an annually elected working committee, the club organizes activities that support students’ academic and professional growth. Through its dynamic environment, the Electrical Club empowers students to innovate, develop essential skills, and prepare for successful careers in the electrical engineering industry.
             </div>
           </div>
         </motion.div>
