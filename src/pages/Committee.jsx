@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 
 const members = [
   { name: "Dikshant Dahal", position: "President", quote: "Quote", flip: false },
-  { name: "Nishcal Neupane", position: "Vice President", quote: "Quote", flip: true },
+  { name: "Nischal Neupane", position: "Vice President", quote: "Quote", flip: true },
   { name: "Madhu Karn", position: "Secretary", quote: "Quote", flip: false },
   { name: "Sanjita Chettri", position: "Treasurer", quote: "Quote", flip: true },
   { name: "Nawed Ahmad", position: "Event Manager", quote: "Quote", flip: false },

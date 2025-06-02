@@ -1,6 +1,7 @@
 import {motion} from "framer-motion";
 import WorkshopCard from "../components/WorkshopCard";
 import RocketAndPath from "../components/RocketAndPath";
+import React from "react";
 
 const workshopDescription = [
   {
@@ -60,7 +61,7 @@ export default function Events(){
             </motion.div>
             <div className="relative flex flex-col items-center w-full pb-4">
                 {workshopDescription.map((workshop, i) => (
-                    <>
+                    <React.Fragment key={i}>
                         <WorkshopCard
                             key={i}
                             number={i}
@@ -71,8 +72,8 @@ export default function Events(){
                             completed={workshop.completed}
                             registrationOpen={workshop.registrationOpen}
                         />
-                        {i<workshopDescription.length - 1 && <RocketAndPath number={i}/>}
-                    </>
+                        {i<workshopDescription.length - 1 && <RocketAndPath key={(workshopDescription.length)+i} number={i}/>}
+                    </React.Fragment>
                 ))}
             </div>
         </main>

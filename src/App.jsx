@@ -4,10 +4,12 @@ import Committee from "./pages/Committee";
 import Events from "./pages/Events";
 import Media from "./pages/Media";
 import Faqs from "./pages/Faqs";
+import ContactUs from "./pages/ContactUs";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GoToTopButton from "./components/GoToTopButton";
 import ScrollToTop from "./components/ScrollToTop";
+import { Toaster } from "react-hot-toast";
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
           <Route path="/events" element={<Events />}/>
           <Route path="/media" element={<Media />}/>
           <Route path="/faqs" element={<Faqs />}/>
+          <Route path="/contact" element={<ContactUs />}/>
         </Routes>
         <Footer />
         <GoToTopButton />

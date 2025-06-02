@@ -1,5 +1,5 @@
 export default function FAQCards({number, question, answer}) {
-    const borderClass = `p-4 w-[80%] text-[#5004a0] text-3xl font-bold border-b border-black ${number? '' : 'border-t' }`;
+    const borderClass = `p-8 w-[80%] text-[#5004a0] text-2xl font-bold border-b border-black ${number? '' : 'border-t' }`;
     return (
         <div 
             className={borderClass}
