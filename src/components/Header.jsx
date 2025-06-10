@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/elec-club-logo.svg";
 import {useState} from 'react';
+import ScrollToTop from "./ScrollToTop"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,13 +10,20 @@ export default function Header() {
   return (
     <header>
       <nav className="h-20 bg-white/50 backdrop-blur-md shadow-lg px-4 py-3 flex justify-between items-center z-20 fixed w-full" id="nav-bar">
-        <div className="h-full text-xl font-bold flex items-center space-x-2">
+        <Link
+          to="/"
+          onClick={() => {
+            if (location.pathname === "/") {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+          className="h-full text-xl font-bold flex items-center space-x-2">
           <img src={logo} alt="Club Logo" className="h-full w-auto object-contain" />
           <div className="flex flex-col items-center text-[#5004a0]">
             Electrical Club
             <span className="text-gray-700 text-sm font-normal">Pulchowk Campus</span>
           </div>
-        </div>
+        </Link>
         <ul
           className={`${
             menuOpen ? 'flex' : 'hidden'

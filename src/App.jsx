@@ -6,6 +6,7 @@ import Media from "./pages/Media";
 import Faqs from "./pages/Faqs";
 import ContactUs from "./pages/ContactUs";
 import Header from "./components/Header";
+import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import GoToTopButton from "./components/GoToTopButton";
 import ScrollToTop from "./components/ScrollToTop";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/faqs" element={<Faqs />}/>
           <Route path="/contact" element={<ContactUs />}/>
         </Routes>
+        <Sponsors />
         <Footer />
         <GoToTopButton />
       </div>
