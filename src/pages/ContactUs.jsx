@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { toast, Toaster } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 export default function ContactUs() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -11,22 +12,38 @@ export default function ContactUs() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData); 
-        toast.success("Message sent!", {
-            duration: 3000,
-            position: "top-right",
-            style: {
-                borderRadius: "10px",
-                background: "#5004a0",
-                color: "#fff",
-            },
-            iconTheme: {
-                primary: "#fff",
-                secondary: "#5004a0",
-            },
-        });
-        setFormData({ name: "", email: "", message: "" });
-    };
+        console.log("submitted!")
+        // emailjs 
+        //     .send( //need to update 
+        //         import.meta.env.VITE_EMAILJS_SERVICE_ID, 
+        //         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        //         formData,
+        //         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        //     )
+        //     .then(
+        //         (result) => {
+        //             console.log(result.text);
+        //             toast.success("Message sent!", {
+        //             duration: 3000,
+        //             position: "top-right",
+        //             style: {
+        //                 borderRadius: "10px",
+        //                 background: "#5004a0",
+        //                 color: "#fff",
+        //             },
+        //             iconTheme: {
+        //                 primary: "#fff",
+        //                 secondary: "#5004a0",
+        //             },
+        //         });
+        //         setFormData({ name: "", email: "", message: "" });
+        //         }, 
+        //         (error) => {
+        //             console.error(error.text);
+        //             toast.error("Failed to send. Please try again later.")
+        //         }
+        //     )
+};
 
     const inputClassName =
         "border border-gray-400 rounded-md p-3 text-gray-700 w-full mb-4 focus:outline-none focus:ring-2 focus:ring-[#5004a0]";
@@ -50,7 +67,13 @@ export default function ContactUs() {
                         </p>
                     </motion.div>
 
-                    <div className="w-[90%] md:w-[60%] max-w-2xl mx-auto p-6 bg-white rounded-2xl shadow-md border border-[#5004a0]">
+                    <motion.div 
+                        className="w-[90%] md:w-[60%] max-w-2xl mx-auto p-6 bg-white rounded-2xl shadow-md border border-[#5004a0]"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.01 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >                
                         <form onSubmit={handleSubmit}>
                             <label className="block text-sm font-medium text-[#5004a0] mb-1">Name</label>
                             <input
@@ -91,7 +114,7 @@ export default function ContactUs() {
                                 Send Message
                             </button>
                         </form>
-                    </div>
+                    </motion.div>
                 </div>
             </main>
         </>

@@ -11,7 +11,7 @@ export default function CommitteeMember({number, name, position, quote, image, f
       <div className={`text-lg p-4 w-full md:w-[60%] text-center md:text-left ${flip ? 'order-1' : 'order-2'} flex flex-col items-center`}>
         <p className="text-4xl font-bold text-center">{name}</p>
         <p className="text-2xl text-center">{position}</p>
-        <p className="italic text-center">-"{quote}"</p>
+        <p className="italic text-center">"{quote}"</p>
       </div>
     </>
   );

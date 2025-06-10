@@ -9,7 +9,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GoToTopButton from "./components/GoToTopButton";
 import ScrollToTop from "./components/ScrollToTop";
-import { Toaster } from "react-hot-toast";
 
 
 function App() {

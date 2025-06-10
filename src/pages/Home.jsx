@@ -13,14 +13,15 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-0"></div>
 
           <div className="relative flex-1 flex flex-col items-center justify-center z-10">
-              <motion.h1
-                className="text-6xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-400 text-center"
+              <motion.div
+                className="text-6xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-400 text-center flex flex-col items-center justify-center"
                 initial={{ opacity: 0, y: -30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
               >
-              Pulchowk Campus Electrical Club
-            </motion.h1>
+              Electrical Club
+              <div className="text-4xl">Pulchowk Campus</div>
+            </motion.div>
               <motion.p
                 className="text-2xl font-bold text-white py-4"
                 initial={{ opacity: 0, y: 20 }}
@@ -42,7 +43,7 @@ export default function Home() {
           <div className="text-5xl font-bold text-[#5004a0] text-center">Electrical Club in Pulchowk Campus</div>
           <div className="flex flex-row flex-wrap p-10">
             <img src={logo} alt="club-logo" className="w-[60%] md:w-[30%] object-contain m-auto" />
-            <div className="text-base md:text-xl w-full md:w-[50%] text-center mt-10 md:m-auto">
+            <div className="text-base md:text-xl w-full md:w-[50%] text-justify mt-10 md:m-auto">
               The Electrical Club at the Department of Electrical Engineering, IOE Pulchowk, is a vibrant student-led organization dedicated to bridging the gap between theoretical learning and practical skills for aspiring electrical engineers. Founded by proactive students, the club fosters creativity, teamwork, and leadership by offering diverse workshops such as home electrification, inverter design, Arduino programming, Proteus simulation, PCB design, and MATLAB/Simulink training. It also hosts a podcast featuring alumni who share valuable career insights. Managed by an annually elected working committee, the club organizes activities that support students’ academic and professional growth. Through its dynamic environment, the Electrical Club empowers students to innovate, develop essential skills, and prepare for successful careers in the electrical engineering industry.
             </div>
           </div>

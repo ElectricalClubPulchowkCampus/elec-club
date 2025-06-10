@@ -19,7 +19,7 @@ export default function Header() {
         <ul
           className={`${
             menuOpen ? 'flex' : 'hidden'
-          } flex-col space-y-2 absolute bg-white/50 top-20 left-0 right-0 p-4 rounded-b-lg shadow-md 
+          } flex-col space-y-2 absolute bg-white/50 top-20 left-0 right-0 p-4 rounded-b-lg shadow-md
             md:static md:flex md:flex-row md:space-x-4 md:space-y-0 md:bg-transparent md:p-0 md:shadow-none 
             text-[#444054] font-bold md:font-medium`}
           style={{fontSize: "clamp(12px, 2vw, 16px)"}}

@@ -5,27 +5,27 @@ import React from "react";
 
 const workshopDescription = [
   {
-    name: "Curcuit Design Workshop",
+    name: "Proteus, PCB design and Fabrication Workshop",
     date: "April 15, 2025 - April 18, 2025",
     time: "7:00-10:00AM, 1:00-2:00PM, 4:00-6:00PM",
-    completed: 1,
-    description: "Learn the basics of PCB design using KiCad in this hands-on workshop!",
+    completed: 0,
+    description: "Learn the basics of PCB design using Proteus and fabrication in this hands-on workshop!",
+    registrationOpen: 1,
+    registrationLink: ""
+  },
+  {
+    name: "Microcontrollers",
+    date: "Coming soon!",
+    time: "Tick tock!",
+    completed: 0,
+    description: "Get started with Arduino and ESP32. Ideal for beginners looking to enter the world of embedded systems!",
     registrationOpen: 0,
     registrationLink: ""
   },
   {
-    name: "Microcontroller Bootcamp",
-    date: "July 2, 2025 - July 5, 2025",
-    time: "9:00AM - 12:00PM, 2:00 - 5:00PM",
-    completed: 0,
-    description: "Get started with Arduino and ESP32. Ideal for beginners looking to enter the world of embedded systems!",
-    registrationOpen: 1,
-    registrationLink: "https://electricalclubpulchowkcampus.github.io/elec-club"
-  },
-  {
     name: "IoT & Cloud Integration",
-    date: "July 12, 2025 - July 14, 2025",
-    time: "10:00AM - 1:00PM, 3:00 - 6:00PM",
+    date: "Coming Soon!",
+    time: "Tick tock!",
     completed: 0,
     description: "Connect hardware to the cloud! Learn how to send sensor data to platforms like ThingsBoard and Firebase.",
     registrationOpen: 0,
@@ -46,7 +46,6 @@ const workshopDescription = [
 export default function Events(){
     return(
         <main className="pt-24 overflow-x-hidden overflow-y-hidden flex flex-wrap flex-col items-center justify-center">
-
             <motion.div 
                 className="text-5xl font-bold text-[#5004a0] text-center my-5 mb-8 flex flex-col"
                 initial={{ opacity: 0, y: 20 }}

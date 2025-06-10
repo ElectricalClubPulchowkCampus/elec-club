@@ -3,18 +3,18 @@ import {motion} from "framer-motion";
 
 
 const members = [
-  { name: "Dikshant Dahal", position: "President", quote: "Quote", flip: false },
-  { name: "Nischal Neupane", position: "Vice President", quote: "Quote", flip: true },
-  { name: "Madhu Karn", position: "Secretary", quote: "Quote", flip: false },
-  { name: "Sanjita Chettri", position: "Treasurer", quote: "Quote", flip: true },
-  { name: "Nawed Ahmad", position: "Event Manager", quote: "Quote", flip: false },
-  { name: "Ainul Haque Ansari", position: "Resource Manager", quote: "Quote", flip: true },
-  { name: "Samrat Manandhar", position: "Research Lead", quote: "Quote", flip: false },
-  { name: "Binit Neupane", position: "Innovative Lead", quote: "Quote", flip: true },
-  { name: "Aayusha Budhathoki", position: "Social Media Manager", quote: "Quote", flip: false },
+  { name: "Dikshant Dahal", position: "President", quote: "Any sufficiently advanced technology is indistinguishable from magic.", flip: false, link:"https://i.postimg.cc/PrPXMk6k/Dikshant.jpg" },
+  { name: "Nischal Neupane", position: "Vice President", quote: "Anyone who thinks the sky is the limit, has limited imagination.", flip: true, link:"https://i.postimg.cc/QMkhMNMc/Nischal.jpg" },
+  { name: "Madhu Karn", position: "Secretary", quote: "Organizing with precision and purpose.", flip: false, link:"https://i.postimg.cc/GmDbZxw7/Madhu.jpg" },
+  { name: "Sanjita Yogi", position: "Treasurer", quote: "Energy is eternal delight.", flip: true, link:"https://i.postimg.cc/BbwqGhny/Sanjita.jpg" },
+  { name: "Nawed Ahmad", position: "Event Manager", quote: "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.", flip: false, link:"https://i.postimg.cc/ZqhJZvJT/Nawed.jpg" },
+  { name: "Ainul Haque Ansari", position: "Resource Manager", quote: "The only way to do great work is to love what you do.", flip: true, link:"https://i.postimg.cc/L6wHC07g/Ainul.jpg" },
+  { name: "Samrat Manandhar", position: "Research Lead", quote: "Do what you feel in your heart to be right - for you'll be criticized anyway.", flip: false, link:"https://i.postimg.cc/xCfYNrkh/Samrat.jpg" },
+  { name: "Binit Neupane", position: "Innovative Lead", quote: "It is what it is.", flip: true, link:"https://i.postimg.cc/FRTvjP3R/Binit.jpg" },
+  { name: "Aayusha Budhathoki", position: "Social Media Manager", quote: "I dance through life with curiosity in my mind and purpose in my heart.", flip: false, link:"https://i.postimg.cc/2jHjv57w/Aayusha.jpg" },
 ];
 
-const placeholderImg = "https://cdn.vectorstock.com/i/500p/29/52/faceless-male-avatar-in-hoodie-vector-56412952.jpg";
+const placeholderImg = "https://i.postimg.cc/90TqtT6p/Aayusha.png";
 
 export default function Committee() {
   return (
@@ -35,7 +35,7 @@ export default function Committee() {
           name={member.name}
           position={member.position}
           quote={member.quote}
-          image={placeholderImg}
+          image={member.link}
           flip={member.flip}
         />
       ))}

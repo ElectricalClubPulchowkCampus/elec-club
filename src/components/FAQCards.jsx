@@ -5,7 +5,7 @@ export default function FAQCards({number, question, answer}) {
             className={borderClass}
         >
             {question}
-            <p className="text-base text-gray-700 md:text-xl font-normal mt-4">{answer}</p>
+            <p className="text-base text-gray-700 text-justify md:text-xl font-normal mt-4">{answer}</p>
         </div>
     );
 }
