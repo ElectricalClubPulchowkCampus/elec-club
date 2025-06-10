@@ -52,7 +52,7 @@ export default function ContactUs() {
         <>
             <Toaster position="top-right" reverseOrder={false} />
             <main className="pt-24">
-                <div className="flex flex-col md:flex-row items-center p-4">
+                <div className="flex flex-col md:flex-row items-center p-4 md:h-[80vh]">
                     <motion.div
                         className="text-5xl font-bold text-[#5004a0] text-center my-5 mb-8 flex flex-col md:w-[50%]"
                         initial={{ opacity: 0, y: 20 }}

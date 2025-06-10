@@ -41,17 +41,17 @@ export default function Header() {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }
               }}
-              className="hover:text-[#9333ea]"
+              className="hover:text-[#9333ea] text-base"
             >
               Home
             </Link>
           </li>
-          <li><Link to="/events" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Events</Link></li>
-          <li><Link to="/media" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Media</Link></li>
-          <li><Link to="/committee" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Committee</Link></li>
+          <li><Link to="/events" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea] text-base">Events</Link></li>
+          <li><Link to="/media" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea] text-base">Media</Link></li>
+          <li><Link to="/committee" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea] text-base">Committee</Link></li>
           {/* <li><Link to="/testimonials" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Testimonials</Link></li> */}
-          <li><Link to="/faqs" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">FAQs</Link></li>
-          <li><Link to="/contact" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea]">Contact Us</Link></li>
+          <li><Link to="/faqs" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea] text-base">FAQs</Link></li>
+          <li><Link to="/contact" onClick={() => setMenuOpen(false)} className="hover:text-[#9333ea] text-base">Contact Us</Link></li>
         </ul>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
