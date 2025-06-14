@@ -5,13 +5,32 @@ export default function CommitteeMember({number, name, position, quote, image, f
 
   const content = (
     <>
-      <div className={`w-[80vw] max-w-[300px] rounded-full aspect-square overflow-hidden border-4 border-black md:w-[50%] md:max-w-none ${flip ? 'md:order-2' : 'order-1'}`}>
+      <div className={`w-[80vw] max-w-[300px] rounded-full aspect-square overflow-hidden border-4 border-[#1A1A1A] md:w-[50%] md:max-w-none ${flip ? 'md:order-2' : 'order-1'}`}>
         <img src={image} alt={`${position.toLowerCase()}-photo`} className="w-full h-full object-cover" />
       </div>
-      <div className={`text-lg p-4 w-full md:w-[60%] text-center md:text-left ${flip ? 'order-1' : 'order-2'} flex flex-col items-center`}>
+      <div className={`text-lg text-[#1A1A1A] p-4 w-full md:w-[50%] text-center md:text-left ${flip ? 'order-1' : 'order-2'} flex flex-col items-center`}>
         <p className="text-4xl font-bold text-center">{name}</p>
         <p className="text-2xl text-center">{position}</p>
         <p className="italic text-center">"{quote}"</p>
+        {/* ////////////////////////Section for links to profiles//////////////////// */}
+        {/* <div className="flex space-x-3 text-4xl p-4">
+          <a href="https://www.facebook.com/ECPulchowk" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/electricalclubpc/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/electrical-club-pulchowk-campus/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
+          <a href="http://www.youtube.com/@electricalclubioe" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-youtube"></i>
+          </a>
+          <a href="https://discord.gg/N2sqKmJE" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-discord"></i>
+          </a>
+        </div> */}
+
       </div>
     </>
   );

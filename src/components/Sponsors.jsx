@@ -27,13 +27,13 @@ export default function Sponsors() {
 
   return (
     <section className="pt-12 px-4">
-      <h2 className="text-3xl font-extrabold text-center text-[#5004a0] mb-8">
+      <h2 className="text-2xl font-extrabold text-center text-[#5004a0] mb-8">
         Our Proud Sponsors
       </h2>
 
       {sponsorGroups.map((group, index) => (
         <div key={index} className="mb-12">
-          <h3 className="text-2xl font-semibold text-center text-gray-800 mb-6">
+          <h3 className="text-base font-semibold text-center text-gray-800 mb-6">
             {group.category}
           </h3>
           <div className="flex flex-wrap justify-center gap-8">
@@ -47,7 +47,7 @@ export default function Sponsors() {
                 alt={`${sponsor.name} logo`}
                 className="w-20 h-20 object-contain mb-3"
                 />
-                <p className="text-center text-gray-700 font-medium">{sponsor.name}</p>
+                <p className="text-center text-gray-700 font-medium text-sm">{sponsor.name}</p>
               </div>
             ))}
           </div>

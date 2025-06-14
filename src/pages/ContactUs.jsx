@@ -12,9 +12,9 @@ export default function ContactUs() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("submitted!")
+        console.log("Email feature coming soon!")
         // emailjs 
-        //     .send( //need to update 
+        //     .send( 
         //         import.meta.env.VITE_EMAILJS_SERVICE_ID, 
         //         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         //         formData,
@@ -65,6 +65,23 @@ export default function ContactUs() {
                             Thinking of something exciting or just want to reach out? Whether you're a fellow student,
                             future partner, or a curious mind, we’d love to connect and create something awesome together!
                         </p>
+                        <div className="flex space-x-5 text-4xl items-center justify-center">
+                            <a href="https://www.facebook.com/ECPulchowk" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/electricalclubpc/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/electrical-club-pulchowk-campus/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="http://www.youtube.com/@electricalclubioe" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://discord.gg/N2sqKmJE" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-discord"></i>
+                            </a>
+                        </div>
                     </motion.div>
 
                     <motion.div 

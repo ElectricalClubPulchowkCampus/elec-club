@@ -6,15 +6,33 @@ import React from "react";
 const workshopDescription = [
   {
     name: "Proteus, PCB design and Fabrication Workshop",
-    date: "April 15, 2025 - April 18, 2025",
-    time: "7:00-10:00AM, 1:00-2:00PM, 4:00-6:00PM",
+    date: "April 20, 2025 - April 23, 2025",
+    time: "7:00-9:00AM, 1:00-3:00PM, 5:00-7:00PM",
     completed: 0,
     description: "Learn the basics of PCB design using Proteus and fabrication in this hands-on workshop!",
     registrationOpen: 1,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeqXQJhmke5LU_jaCBMKY2RcIX2Y6vh45g6bFU7WPFx32NYEA/viewform?fbclid=IwY2xjawK6AzFleHRuA2FlbQIxMABicmlkETFJSU5HSGE4SERDSVcxZ0kwAR4Y2U4jXjQg46nk_vOBYYCThEsGFj6fSQCN68t2CVrVqtKxgtVQFsWHTNtRdQ_aem_Jgu72x6J7sS5gegNGBeAvQ"
+  },
+  {
+    name: "ETAP Workshop",
+    date: "Coming soon!",
+    time: "Tick tock!",
+    completed: 0,
+    description: "Dive into electrical power system modeling, analysis, and simulation using ETAP. Perfect for electrical engineering students!",
+    registrationOpen: 0,
     registrationLink: ""
   },
   {
-    name: "Microcontrollers",
+    name: "AutoCAD Workshop",
+    date: "Coming soon!",
+    time: "Tick tock!",
+    completed: 0,
+    description: "Master basic to intermediate 2D drafting and electrical schematics using AutoCAD. A must-have skill for design engineers!",
+    registrationOpen: 0,
+    registrationLink: ""
+  },
+  {
+    name: "Microcontrollers Workshop",
     date: "Coming soon!",
     time: "Tick tock!",
     completed: 0,
@@ -23,24 +41,16 @@ const workshopDescription = [
     registrationLink: ""
   },
   {
-    name: "IoT & Cloud Integration",
-    date: "Coming Soon!",
+    name: "IoT Workshop",
+    date: "Coming soon!",
     time: "Tick tock!",
     completed: 0,
     description: "Connect hardware to the cloud! Learn how to send sensor data to platforms like ThingsBoard and Firebase.",
     registrationOpen: 0,
     registrationLink: ""
-  },
-  {
-    name: "Robotics with Raspberry Pi",
-    date: "July 20, 2025 - July 23, 2025",
-    time: "8:00AM - 11:00AM, 1:00 - 4:00PM",
-    completed: 0,
-    description: "Build and program a basic robot using Raspberry Pi and Python. No prior robotics experience required!",
-    registrationOpen: 0,
-    registrationLink: ""
   }
 ];
+
 
 
 export default function Events(){
@@ -70,6 +80,7 @@ export default function Events(){
                             description={workshop.description}
                             completed={workshop.completed}
                             registrationOpen={workshop.registrationOpen}
+                            registrationLink={workshop.registrationLink}
                         />
                         {i<workshopDescription.length - 1 && <RocketAndPath key={(workshopDescription.length)+i} number={i}/>}
                     </React.Fragment>

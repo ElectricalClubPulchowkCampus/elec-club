@@ -26,7 +26,7 @@ function App() {
           <Route path="/faqs" element={<Faqs />}/>
           <Route path="/contact" element={<ContactUs />}/>
         </Routes>
-        <Sponsors />
+        {/* <Sponsors /> /////////////////////Enable only after configuring.*/}
         <Footer />
         <GoToTopButton />
       </div>

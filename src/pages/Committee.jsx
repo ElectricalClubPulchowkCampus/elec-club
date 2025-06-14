@@ -14,8 +14,6 @@ const members = [
   { name: "Aayusha Budhathoki", position: "Social Media Manager", quote: "I dance through life with curiosity in my mind and purpose in my heart.", flip: false, link:"https://i.postimg.cc/2jHjv57w/Aayusha.jpg" },
 ];
 
-const placeholderImg = "https://i.postimg.cc/90TqtT6p/Aayusha.png";
-
 export default function Committee() {
   return (
     <main className="pt-24 overflow-x-hidden overflow-y-hidden">
