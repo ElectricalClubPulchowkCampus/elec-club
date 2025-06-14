@@ -53,7 +53,7 @@ export default function Media(){
                 >
                     EC Talks
                     <p className="text-base font-normal p-2 flex text-center">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        EC Talks is a conversational series hosted by the Electrical Club of Pulchowk Campus, where we bring together students, alumni, and professionals to share their journeys, experiences, and insights in the field of electrical and electronics engineering. Whether it's navigating university life, exploring career paths, or diving into cutting-edge tech, EC Talks aims to educate, inspire, and connect our community through meaningful discussions and real-world stories.
                     </p>
                 </motion.div>
                 <iframe 
@@ -61,10 +61,9 @@ export default function Media(){
                     height="315" 
                     src="https://www.youtube.com/embed/lgkdX1DgGz4?si=6cgrjAsMcRwhN9ZK" 
                     title="YouTube video player" 
-                    frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerPolicy="strict-origin-when-cross-origin" 
-                    className="m-auto w-[70%] h-auto aspect-video max-w-[700px] flex-wrap"
+                    className="m-auto w-[70%] h-auto aspect-video max-w-[700px] flex-wrap border-black border-4"
                     allowFullScreen>
                 </iframe>
             </div>
