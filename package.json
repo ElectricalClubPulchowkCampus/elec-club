@@ -12,11 +12,13 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@emailjs/nodejs": "^5.0.2",
     "@tailwindcss/vite": "^4.1.8",
     "framer-motion": "^12.15.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hot-toast": "^2.5.2",
+    "react-particles": "^2.12.2",
     "react-router-dom": "^7.6.1",
     "swiper": "^11.2.8",
     "tailwindcss": "^4.1.8"

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { toast, Toaster } from "react-hot-toast";
-import emailjs from "@emailjs/browser";
 
 export default function ContactUs() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -12,38 +11,26 @@ export default function ContactUs() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Email feature coming soon!")
-        // emailjs 
-        //     .send( 
-        //         import.meta.env.VITE_EMAILJS_SERVICE_ID, 
-        //         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        //         formData,
-        //         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-        //     )
-        //     .then(
-        //         (result) => {
-        //             console.log(result.text);
-        //             toast.success("Message sent!", {
-        //             duration: 3000,
-        //             position: "top-right",
-        //             style: {
-        //                 borderRadius: "10px",
-        //                 background: "#5004a0",
-        //                 color: "#fff",
-        //             },
-        //             iconTheme: {
-        //                 primary: "#fff",
-        //                 secondary: "#5004a0",
-        //             },
-        //         });
-        //         setFormData({ name: "", email: "", message: "" });
-        //         }, 
-        //         (error) => {
-        //             console.error(error.text);
-        //             toast.error("Failed to send. Please try again later.")
-        //         }
-        //     )
-};
+        fetch("https://elec-club-backend.onrender.com/contact", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+        })
+        .then((res) => {
+            if (res.ok) {
+            toast.success("Message sent!");
+            setFormData({ name: "", email: "", message: "" });
+            } else {
+            toast.error("Failed to send message.");
+            }
+        })
+        .catch((err) => {
+            console.error(err);
+            toast.error("Something went wrong.");
+        });
+    };
 
     const inputClassName =
         "border border-gray-400 rounded-md p-3 text-gray-700 w-full mb-4 focus:outline-none focus:ring-2 focus:ring-[#5004a0]";

@@ -3,6 +3,7 @@ import WorkshopCard from "../components/WorkshopCard";
 import RocketAndPath from "../components/RocketAndPath";
 import React from "react";
 
+
 const workshopDescription = [
   {
     name: "Proteus, PCB design and Fabrication Workshop",
@@ -89,7 +90,3 @@ export default function Events(){
         </main>
     )
 }
-
-/*
-
-*/

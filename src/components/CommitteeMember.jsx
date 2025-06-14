@@ -4,11 +4,11 @@ export default function CommitteeMember({number, name, position, quote, image, f
   const baseClasses = "flex flex-col md:flex-row md:flex-nowrap items-center justify-center md:justify-between p-10 max-w-screen-lg mx-auto space-x-4";
   
   const socialIcons = {
-    facebook: "fab fa-facebook-f",
-    instagram: "fab fa-instagram",
-    linkedin: "fab fa-linkedin-in",
-    github: "fab fa-github",
-    discord: "fab fa-discord"
+    facebook: "fab fa-facebook-f text-[#1877F2]",
+    instagram: "fab fa-instagram bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 bg-clip-text text-transparent",
+    linkedin: "fab fa-linkedin-in text-[#0077B5]",
+    github: "fab fa-github text-[#181717]",
+    discord: "fab fa-discord text-[#5865F2]"
   };
 
   const socialLinks = Object.entries(socials).map(([platform, url]) => {
