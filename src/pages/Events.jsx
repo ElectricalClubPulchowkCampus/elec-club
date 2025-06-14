@@ -6,7 +6,7 @@ import React from "react";
 const workshopDescription = [
   {
     name: "Proteus, PCB design and Fabrication Workshop",
-    date: "April 20, 2025 - April 23, 2025",
+    date: "June 20, 2025 - June 23, 2025",
     time: "7:00-9:00AM, 1:00-3:00PM, 5:00-7:00PM",
     completed: 0,
     description: "Learn the basics of PCB design using Proteus and fabrication in this hands-on workshop!",
