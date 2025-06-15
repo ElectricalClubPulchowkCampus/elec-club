@@ -11,7 +11,7 @@ export default function Sponsors() {
       ],
     },
     {
-      category: "Ride Partner",
+      category: "Mobility Partner",
       sponsors: [
         {
           name: "Tootle",
@@ -30,7 +30,6 @@ export default function Sponsors() {
         },
       ],
     },
-
   ];
 
   return (
