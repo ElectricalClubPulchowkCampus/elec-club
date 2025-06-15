@@ -45,7 +45,7 @@ export default function CommitteeMember({number, name, position, quote, image, f
 
   return(
   <motion.div
-    className={`flex flex-col md:flex-row items-center justify-center my-10 px-4 ${
+    className={`flex flex-col md:flex-row items-center justify-center mt-10 px-4 ${
       flip ? "md:flex-row-reverse" : ""
     }`}
     {...(number === 0
