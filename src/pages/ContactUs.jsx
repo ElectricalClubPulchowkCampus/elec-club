@@ -4,13 +4,14 @@ import { toast, Toaster } from "react-hot-toast";
 
 export default function ContactUs() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-
+    const [isSending, setIsSending] = useState(false);
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsSending(true);
         fetch("https://elec-club-backend.onrender.com/contact", {
         method: "POST",
         headers: {
@@ -29,6 +30,9 @@ export default function ContactUs() {
         .catch((err) => {
             console.error(err);
             toast.error("Something went wrong.");
+        })
+        .finally(()=>{
+            setIsSending(false);
         });
     };
 
@@ -112,10 +116,12 @@ export default function ContactUs() {
                             />
 
                             <button
-                                type="submit"
-                                className="mt-4 bg-[#5004a0] text-white px-6 py-2 rounded-md hover:bg-[#3e037e] transition-all w-[100%]"
+                            type="submit"
+                            className={`mt-4 px-6 py-2 rounded-md w-full transition-all 
+                                ${isSending ? "bg-gray-400 cursor-not-allowed" : "bg-[#5004a0] hover:bg-[#3e037e] text-white"}`}
+                            disabled={isSending}
                             >
-                                Send Message
+                                {isSending ? "Sending..." : "Send Message"}
                             </button>
                         </form>
                     </motion.div>

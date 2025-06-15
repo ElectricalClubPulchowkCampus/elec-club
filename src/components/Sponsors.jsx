@@ -1,15 +1,20 @@
 export default function Sponsors() {
   const sponsorGroups = [
     {
-      category: "General Sponsors",
+      category: "Associate Sponsors",
       sponsors: [
         {
-          name: "Company",
-          logo: "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655e15f27b10dfb205db407ab13975.jpg",
+          name: "Nepal Power Engineering and Fabricators",
+          logo: "https://i.postimg.cc/nV90fPB7/NPEFLogo-removebg-preview.png",
         },
+      ],
+    },
+    {
+      category: "Ride Partner",
+      sponsors: [
         {
-          name: "Company",
-          logo: "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655e15f27b10dfb205db407ab13975.jpg",
+          name: "Tootle",
+          logo: "https://i.postimg.cc/HkVqq2Yh/Tootle-Logo.png",
         },
       ],
     },
@@ -18,7 +23,7 @@ export default function Sponsors() {
       sponsors: [
         {
           name: "The Plant Room",
-          logo: "https://i.fbcd.co/products/resized/resized-750-500/35fa221b9125551fc13446133b8d980337655e15f27b10dfb205db407ab13975.jpg",
+          logo: "https://i.postimg.cc/8j3zhcyT/The-Plant-Room-Logo.jpg",
         },
       ],
     },

@@ -36,7 +36,7 @@ export default function CommitteeMember({number, name, position, quote, image, f
         <p className="text-4xl font-bold text-center">{name}</p>
         <p className="text-2xl text-center">{position}</p>
         <p className="italic text-center p-2">"{quote}"</p>
-        <div className="flex text-3xl pt-4">
+        <div className="flex text-3xl pt-4 text-center">
           {socialLinks}
         </div>
       </div>

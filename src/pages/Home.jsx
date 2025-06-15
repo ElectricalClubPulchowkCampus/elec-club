@@ -4,16 +4,17 @@ import HomeSlide from "../components/HomeSlide";
 import PCBSlide from "../components/PCBSlide";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import { Autoplay, Pagination, EffectFade, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import "swiper/css/navigation";
 
 export default function Home() {
   return (
     <main>
       <Swiper
-        modules={[Autoplay, Pagination, EffectFade]}
+        modules={[Autoplay, Pagination, EffectFade, Navigation]}
         effect="fade"
         loop={true}
         autoplay={{
@@ -23,6 +24,7 @@ export default function Home() {
         pagination={{
           clickable: true,
         }}
+        navigation={true}
         className="w-full h-screen"
       >
         <SwiperSlide>

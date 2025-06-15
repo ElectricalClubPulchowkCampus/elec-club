@@ -105,7 +105,7 @@ const members = [
 
 export default function Committee() {
   return (
-    <main className="pt-24 overflow-x-hidden overflow-y-hidden">
+    <main className="pt-24 overflow-x-hidden overflow-y-hidden flex flex-col items-center justify-center">
       <motion.p 
         className="text-5xl font-bold text-[#5004a0] text-center mt-5"
         initial={{ opacity: 0, y: 20 }}
