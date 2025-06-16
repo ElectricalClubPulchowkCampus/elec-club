@@ -5,35 +5,42 @@ import { toast, Toaster } from "react-hot-toast";
 export default function ContactUs() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
     const [isSending, setIsSending] = useState(false);
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSending(true);
-        fetch("https://elec-club-backend.onrender.com/contact", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-        })
-        .then((res) => {
-            if (res.ok) {
-            toast.success("Message sent!");
-            setFormData({ name: "", email: "", message: "" });
+
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzCavjg2PKwXWazVXNgeB5tBgLs0mz3Umw7Wc-IJsmoVOL2t0XMaJIYjFyE6aGkNqAc/exec"
+
+        const data = new FormData();
+        data.append("name", formData.name);
+        data.append("email", formData.email);
+        data.append("message", formData.message);
+
+        try {
+            const res = await fetch(scriptURL, {
+                method: "POST",
+                body: data,
+            });
+
+            const result = await res.json();
+
+            if (result.success) {
+                toast.success("Message sent!");
+                setFormData({ name: "", email: "", message: "" });
             } else {
-            toast.error("Failed to send message.");
+                toast.error("Failed to send message.");
             }
-        })
-        .catch((err) => {
+        } catch (err) {
             console.error(err);
             toast.error("Something went wrong.");
-        })
-        .finally(()=>{
+        } finally {
             setIsSending(false);
-        });
+        }
     };
 
     const inputClassName =
