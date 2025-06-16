@@ -72,7 +72,7 @@ const members = [
     position: "Research Lead",
     quote: "Do what you feel in your heart to be right - for you'll be criticized anyway.",
     flip: false,
-    link: "https://i.postimg.cc/xCfYNrkh/Samrat.jpg",
+    link: "https://i.postimg.cc/Bbx9Mvnq/Samrat.jpg",
     social: {}
   },
   {
