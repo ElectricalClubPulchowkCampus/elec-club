@@ -1,6 +1,16 @@
 export default function Sponsors() {
   const sponsorGroups = [
     {
+      category: "Platinum Sponsor",
+      sponsors: [
+        {
+          name: "Litmus Cables",
+          logo: "https://i.postimg.cc/GtpLhkZM/Litmus.jpg",
+          url: "https://www.litmus.com.np/", 
+        },
+      ],
+    },
+    {
       category: "Associate Sponsor",
       sponsors: [
         {
@@ -21,12 +31,32 @@ export default function Sponsors() {
       ],
     },
     {
+      category: "Media Partner",
+      sponsors: [
+        {
+          name: "Edusanjal",
+          logo: "https://i.postimg.cc/XvPVsZhm/Edusanjal.jpg",
+          url: "https://edusanjal.com/", 
+        },
+      ],
+    },
+    {
       category: "Green Partner",
       sponsors: [
         {
           name: "The Plant Room",
           logo: "https://i.postimg.cc/gk1Qxcw2/The-Plant-Room-Logo.png",
           url: "https://www.instagram.com/theplantro0m/", 
+        },
+      ],
+    },
+    {
+      category: "Styling Parnter",
+      sponsors: [
+        {
+          name: "Looks Salon",
+          logo: "https://i.postimg.cc/JnXpSg6m/Looks-Salon.png",
+          url: "https://www.instagram.com/lookssalonnepal/", 
         },
       ],
     },
@@ -40,6 +70,7 @@ export default function Sponsors() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          
           {sponsorGroups.map((group, index) => (
             <div key={index}>
               <h2 className="text-base font-semibold text-gray-700 mb-6 uppercase tracking-wider border-y-2 border-gray-400 py-2">
