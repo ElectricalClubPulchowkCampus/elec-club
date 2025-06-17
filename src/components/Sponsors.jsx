@@ -5,7 +5,7 @@ export default function Sponsors() {
       sponsors: [
         {
           name: "Litmus Cables",
-          logo: "https://i.postimg.cc/VNWqM8VJ/Litmus-Cables-Logo.png",
+          logo: "https://i.postimg.cc/J4rHdzQx/Litmus.jpg",
           url: "https://www.litmus.com.np/", 
         },
       ],
