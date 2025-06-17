@@ -5,7 +5,7 @@ export default function Sponsors() {
       sponsors: [
         {
           name: "Litmus Cables",
-          logo: "https://i.postimg.cc/GtpLhkZM/Litmus.jpg",
+          logo: "https://i.postimg.cc/VNWqM8VJ/Litmus-Cables-Logo.png",
           url: "https://www.litmus.com.np/", 
         },
       ],
@@ -35,7 +35,7 @@ export default function Sponsors() {
       sponsors: [
         {
           name: "Edusanjal",
-          logo: "https://i.postimg.cc/XvPVsZhm/Edusanjal.jpg",
+          logo: "https://i.postimg.cc/bdfr3GGp/Edusanjal-Logo.png",
           url: "https://edusanjal.com/", 
         },
       ],
@@ -55,7 +55,7 @@ export default function Sponsors() {
       sponsors: [
         {
           name: "Looks Salon",
-          logo: "https://i.postimg.cc/JnXpSg6m/Looks-Salon.png",
+          logo: "https://i.postimg.cc/J4j9sTLG/Looks-Salon-Logo.png",
           url: "https://www.instagram.com/lookssalonnepal/", 
         },
       ],
@@ -90,7 +90,7 @@ export default function Sponsors() {
                       alt={`${sponsor.name} logo`}
                       className="w-28 h-28 object-contain mb-4"
                     />
-                    <p className="text-gray-800 font-sm">{sponsor.name}</p>
+                    <p className="text-gray-800 font-medium">{sponsor.name}</p>
                   </a>
                 ))}
               </div>
