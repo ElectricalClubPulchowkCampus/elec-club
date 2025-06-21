@@ -60,6 +60,36 @@ export default function Sponsors() {
         },
       ],
     },
+    {
+      category: "Momento Partner",
+      sponsors: [
+        {
+          name: "Line Academy",
+          logo: "https://i.postimg.cc/02TYLWD5/line-academy.png",
+          url: "https://www.facebook.com/LineAcademy.edu.np", 
+        },
+      ],
+    },
+    {
+      category: "Education Partner",
+      sponsors: [
+        {
+          name: "UThinkCrazy",
+          logo: "https://i.postimg.cc/t4b5svTS/uthinkcrazy.png",
+          url: "https://uthinkcrazy.com/", 
+        },
+      ],
+    },
+    {
+      category: "Fabrication Partner",
+      sponsors: [
+        {
+          name: "The Squad of Changemakers",
+          logo: "https://i.postimg.cc/pVD5mWFv/thesquadofchangemakers.jpg",
+          url: "https://www.facebook.com/thesquadofchangemakers/", 
+        },
+      ],
+    },
   ];
 
   return (
