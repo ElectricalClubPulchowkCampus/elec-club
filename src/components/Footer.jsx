@@ -18,7 +18,7 @@ export default function Footer() {
             <a href="http://www.youtube.com/@electricalclubioe" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube"></i>
             </a>
-            <a href="https://discord.gg/N2sqKmJE" target="_blank" rel="noopener noreferrer">
+            <a href="https://discord.gg/sXbK656RVa" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-discord"></i>
             </a>
           </div>
