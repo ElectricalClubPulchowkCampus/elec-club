@@ -29,12 +29,12 @@ function App() {
     <>
       <ScrollToTop />
       <div className="bg-gradient-to-br from-slate-100 via-violet-100 to-fuchsia-100">
-      {showPopup && (
+      {/* {showPopup && (
         <PopupBanner
           imageUrl={bannerImage}
           onClose={() => setShowPopup(false)}
         />
-      )}
+      )} */}
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

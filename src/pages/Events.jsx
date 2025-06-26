@@ -9,9 +9,9 @@ const workshopDescription = [
     name: "Proteus: PCB design and Fabrication Workshop : Electrified by Litmus Cables",
     date: "June 20, 2025 - June 23, 2025",
     time: "7:00-9:00AM, 1:00-3:00PM, 5:00-7:00PM",
-    completed: 0,
+    completed: 1,
     description: "Learn the basics of PCB design using Proteus and fabrication in this hands-on workshop!",
-    registrationOpen: 1,
+    registrationOpen: 0,
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeqXQJhmke5LU_jaCBMKY2RcIX2Y6vh45g6bFU7WPFx32NYEA/viewform?fbclid=IwY2xjawK6AzFleHRuA2FlbQIxMABicmlkETFJSU5HSGE4SERDSVcxZ0kwAR4Y2U4jXjQg46nk_vOBYYCThEsGFj6fSQCN68t2CVrVqtKxgtVQFsWHTNtRdQ_aem_Jgu72x6J7sS5gegNGBeAvQ"
   },
   {
