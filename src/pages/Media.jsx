@@ -3,40 +3,68 @@ import ImageCard from "../components/ImageCard"
 
 const photos = [
   {
-    URL: "https://www.austintec.com/wp-content/uploads/2024/05/what-do-electrical-engineers-do.jpg",
-    description: "test",
+    URL: "https://i.ibb.co/wHhgfMp/IMG-5955.jpg",
+    description: "Our tutor Ainul explaining the etching process.",
   },
   {
-    URL: "https://images.squarespace-cdn.com/content/v1/625b62eff476f3155f94feb1/44fad8e0-405b-440a-b9c7-d6739844065c/pexels-pixabay-257736.jpg",
-    description: "test",
+    URL: "https://i.ibb.co/S7sKHQG2/IMG-5713.jpg",
+    description: "Students working on their task, and the mentors helping them.",
   },
   {
-    URL: "https://electricalinstallationservices.co.uk/wp-content/uploads/2021/02/Commercial-Electrician-Near-Me-London-scaled.jpeg",
-    description: "test",
+    URL: "https://i.ibb.co/k2NC35Hx/IMG-6054.jpg",
+    description: "Our president Dikshant helping the students.",
   },
   {
-    URL: "https://raviniaplumbing.com/wp-content/uploads/2023/08/Common-Electrical-Tools-to-Know-About-1-scaled.jpg",
-    description: "test",
+    URL: "https://i.ibb.co/VpT69MX7/IMG-6033.jpg",
+    description: "Our resource manager and tutor Ainul, explaining soldering.",
   },
   {
-    URL: "https://cdn.prod.website-files.com/6390e14cc734a931f8327343/65124e6e62de0dee470a5bcf_image4.jpg",
-    description: "test",
+    URL: "https://i.ibb.co/0pCKbxLS/IMG-6188.jpg",
+    description: "Mentors exchanging knowledge and laughs.",
   },
   {
-    URL: "https://www.propcert.co.uk/wp-content/uploads/2024/02/shutterstock_435917491-min-scaled.jpg",
-    description: "test",
+    URL: "https://i.ibb.co/BKwDcMFQ/IMG-6737.jpg",
+    description: "Our innovative lead and tutor Binit explaining etching process.",
   },
   {
-    URL: "https://tus.ie/app/uploads/Study/FlexibleProfessional/CourseImages/Electrical_Eng-2-scaled.jpg",
-    description: "test",
+    URL: "https://i.ibb.co/gLz4Tnvd/IMG-6357.jpg",
+    description: "Happy face after toner transfer onto the copper board :)",
   },
   {
-    URL: "https://www.thoughtco.com/thmb/KEXYeuqtI767jt1XqkObGqM_Xtw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-144635668-1d9932afb0cd44a2ad33b1f0329d6ec6.jpg",
-    description: "test",
+    URL: "https://i.ibb.co/Gf3F82Vg/IMG-6774.jpg",
+    description: "Students showing off their soldering skills through matrix board.",
   },
   {
-    URL: "https://www.gradschoolcenter.com/wp-content/uploads/2022/09/Best-Online-Doctor-of-Electrical-Engineering-featured-image.jpg",
-    description: "test",
+    URL: "https://i.ibb.co/cK1L0NKm/IMG-6908.jpg",
+    description: "Drilling process during PCB design.",
+  },
+  {
+    URL: "https://i.ibb.co/TBNcvrRv/IMG-7016.jpg",
+    description: "Astable multivibrator we made during PCB workshop!",
+  },
+  {
+    URL: "https://i.ibb.co/DPpY4vZM/IMG-7105.jpg",
+    description: "Students showing off their copper board after the etching process :D",
+  },
+  {
+    URL: "https://i.ibb.co/zWQSrn84/IMG-6219.jpg",
+    description: "Our resource manager and tutor Ainul teaching a student about soldering.",
+  },
+  {
+    URL: "https://i.ibb.co/r2SNVrdN/IMG-5582.jpg",
+    description: "Our event manager and tutor Nawed teaching the students about PCB layout.",
+  },
+  {
+    URL: "https://i.ibb.co/MxVmDQzB/IMG-5837.jpg",
+    description: "Our mentor and treasurer Sanjita teaching the students.",
+  },
+  {
+    URL: "https://i.ibb.co/Fbhy7wYY/IMG-5842.jpg",
+    description: "Our exec Lakhan teaching the students.",
+  },
+  {
+    URL: "https://i.ibb.co/twVVvSzz/IMG-5897.jpg",
+    description: "Our execs and mentor exchanging laughs :)",
   }
 ];
 
@@ -76,7 +104,7 @@ export default function Media(){
             >
                 Photo Gallery
             </motion.div>
-            <div className="px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {photos.map((photo, i) => (
                         <ImageCard
                             key={i}

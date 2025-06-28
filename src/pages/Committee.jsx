@@ -78,7 +78,7 @@ const members = [
   {
     name: "Binit Neupane",
     position: "Innovative Lead",
-    quote: "It is what it is.",
+    quote: "One must imagine Sisyphus happy.",
     flip: true,
     link: "https://i.postimg.cc/FRTvjP3R/Binit.jpg",
     social: {
