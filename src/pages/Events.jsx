@@ -15,6 +15,15 @@ const workshopDescription = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeqXQJhmke5LU_jaCBMKY2RcIX2Y6vh45g6bFU7WPFx32NYEA/viewform?fbclid=IwY2xjawK6AzFleHRuA2FlbQIxMABicmlkETFJSU5HSGE4SERDSVcxZ0kwAR4Y2U4jXjQg46nk_vOBYYCThEsGFj6fSQCN68t2CVrVqtKxgtVQFsWHTNtRdQ_aem_Jgu72x6J7sS5gegNGBeAvQ"
   },
   {
+    name: "Embedded Systems Workshop",
+    date: "Shrawan 8, 2082 - Shrawan 15, 2082",
+    time: "Revealing Soon!",
+    completed: 0,
+    description: "From blinking LEDs to controlling motors, learn the core of electronics in an engaging and beginner-friendly way. Whether you're curious or career-focused, this is your chance to get practical!",
+    registrationOpen: 1,
+    registrationLink: "https://tinyurl.com/ecastelectrical"
+  },
+  {
     name: "ETAP Workshop",
     date: "Coming soon!",
     time: "Tick tock!",
@@ -32,24 +41,6 @@ const workshopDescription = [
     registrationOpen: 0,
     registrationLink: ""
   },
-  {
-    name: "Microcontrollers Workshop",
-    date: "Coming soon!",
-    time: "Tick tock!",
-    completed: 0,
-    description: "Get started with Arduino and ESP32. Ideal for beginners looking to enter the world of embedded systems!",
-    registrationOpen: 0,
-    registrationLink: ""
-  },
-  {
-    name: "IoT Workshop",
-    date: "Coming soon!",
-    time: "Tick tock!",
-    completed: 0,
-    description: "Connect hardware to the cloud! Learn how to send sensor data to platforms like ThingsBoard and Firebase.",
-    registrationOpen: 0,
-    registrationLink: ""
-  }
 ];
 
 
