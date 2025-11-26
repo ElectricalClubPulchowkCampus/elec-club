@@ -2,6 +2,7 @@ import logo from "../assets/images/elec-club-logo.svg";
 import { motion } from "framer-motion";
 import HomeSlide from "../components/HomeSlide";
 import PCBSlide from "../components/PCBSlide";
+import WorkshopSlide from "../components/WorkshopSlide"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade, Navigation } from "swiper/modules";
@@ -32,6 +33,9 @@ export default function Home() {
         </SwiperSlide>
         <SwiperSlide>
           <PCBSlide/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <WorkshopSlide/>
         </SwiperSlide>
       </Swiper>
 

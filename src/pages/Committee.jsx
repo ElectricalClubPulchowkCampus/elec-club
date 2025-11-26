@@ -90,6 +90,30 @@ const members = [
     }
   },
   {
+    name: "Lakhan Magar",
+    position: "Project Manager",
+    // quote: "I dance through life with curiosity in my mind and purpose in my heart.",
+    flip: false,
+    link: "https://i.postimg.cc/tgb7h299/Lakhan.jpg",
+    social: {
+      facebook: "https://www.facebook.com/lakhan.khapangimagar.7",
+      instagram: "https://www.instagram.com/lakhankhapangimagar/",
+      // linkedin: "https://www.linkedin.com/in/aayusha-budhathoki-8b1751369"
+    }
+  },
+  {
+    name: "Rabi Jaiswal",
+    position: "Creative Lead",
+    // quote: "I dance through life with curiosity in my mind and purpose in my heart.",
+    flip: true,
+    link: "https://i.postimg.cc/XYby8Vgz/Rabi.png",
+    social: {
+      facebook: "https://www.facebook.com/rabi.jayswal2",
+      instagram: "https://www.instagram.com/rabi_jayswal/",
+      // linkedin: "https://www.linkedin.com/in/aayusha-budhathoki-8b1751369"
+    }
+  },
+  {
     name: "Aayusha Budhathoki",
     position: "Social Media Manager",
     quote: "I dance through life with curiosity in my mind and purpose in my heart.",

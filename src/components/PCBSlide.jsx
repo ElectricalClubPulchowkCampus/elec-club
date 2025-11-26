@@ -16,7 +16,7 @@ export default function PCBSlide() {
                 <p className="text-2xl p-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-350 to-yellow-500 text-center flex flex-col items-center justify-center space-y-2">
                     Electrified by Litmus Cables
                 </p>
-                <p className="text-white text-base pt-8 font-bold">
+                <p className="text-white text-base pt-4 font-bold">
                     📅 June 20  –23, 2025 
                 </p>
                 <p className="text-white text-base font-bold">
@@ -26,7 +26,7 @@ export default function PCBSlide() {
                 href="https://drive.google.com/drive/folders/1WbTp8BdrQu2bPpdKKj20AKoJL-vmys5J?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-block px-8 py-3 bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-400 text-black font-semibold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                className="mt-4 inline-block px-8 py-3 bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-400 text-black font-semibold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
                     See glimpses 👀
                 </a>

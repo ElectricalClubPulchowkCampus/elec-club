@@ -65,6 +65,22 @@ const photos = [
   {
     URL: "https://i.ibb.co/twVVvSzz/IMG-5897.jpg",
     description: "Our execs and mentor exchanging laughs :)",
+  },
+    {
+    URL: "https://i.ibb.co/Z6bp6LSj/IMG-20251125-122100.jpg",
+    description: "Our president teaching in One Day Workshop initiative :).",
+  },
+  {
+    URL: "https://i.ibb.co/Q4NvXNc/IMG-20251125-151337.jpg",
+    description: "One day workshop at CCRC.",
+  },
+  {
+    URL: "https://i.ibb.co/7d05S7t4/IMG-20251125-153448.jpg",
+    description: "Students connecting their circuits in the one day workshop.",
+  },
+  {
+    URL: "https://i.ibb.co/xq8jm9KW/IMG-20251125-161113.jpg",
+    description: "One day workshop at CCRC :)",
   }
 ];
 

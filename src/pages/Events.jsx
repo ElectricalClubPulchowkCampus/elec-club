@@ -17,20 +17,11 @@ const workshopDescription = [
   {
     name: "Embedded Systems Workshop",
     date: "Shrawan 8, 2082 - Shrawan 15, 2082",
-    time: "Revealing Soon!",
-    completed: 0,
+    time: "5:00-7:00 PM",
+    completed: 1,
     description: "From blinking LEDs to controlling motors, learn the core of electronics in an engaging and beginner-friendly way. Whether you're curious or career-focused, this is your chance to get practical!",
-    registrationOpen: 1,
-    registrationLink: "https://tinyurl.com/ecastelectrical"
-  },
-  {
-    name: "ETAP Workshop",
-    date: "Coming soon!",
-    time: "Tick tock!",
-    completed: 0,
-    description: "Dive into electrical power system modeling, analysis, and simulation using ETAP. Perfect for electrical engineering students!",
     registrationOpen: 0,
-    registrationLink: ""
+    registrationLink: "https://tinyurl.com/ecastelectrical"
   },
   {
     name: "AutoCAD Workshop",
@@ -38,6 +29,15 @@ const workshopDescription = [
     time: "Tick tock!",
     completed: 0,
     description: "Master basic to intermediate 2D drafting and electrical schematics using AutoCAD. A must-have skill for design engineers!",
+    registrationOpen: 0,
+    registrationLink: ""
+  },
+  {
+    name: "ETAP Workshop",
+    date: "Coming soon!",
+    time: "Tick tock!",
+    completed: 0,
+    description: "Dive into electrical power system modeling, analysis, and simulation using ETAP. Perfect for electrical engineering students!",
     registrationOpen: 0,
     registrationLink: ""
   },
