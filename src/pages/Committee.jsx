@@ -102,11 +102,11 @@ const members = [
     }
   },
   {
-    name: "Rabi Jaiswal",
+    name: "Rabi Jayswal",
     position: "Creative Lead",
-    // quote: "I dance through life with curiosity in my mind and purpose in my heart.",
+    quote: "Circuits are my language, creativity is my power.",
     flip: true,
-    link: "https://i.postimg.cc/XYby8Vgz/Rabi.png",
+    link: "https://i.postimg.cc/KY9rbVBs/Rabi.jpg",
     social: {
       facebook: "https://www.facebook.com/rabi.jayswal2",
       instagram: "https://www.instagram.com/rabi_jayswal/",
