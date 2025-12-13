@@ -36,7 +36,6 @@ export default function Footer() {
       </div>
       <div className="w-full text-base text-center p-2">
         <div>Copyright &copy; 2025 All rights reserved | Electrical Club Pulchowk Campus</div>
-        <div className="text-sm mt-1 opacity-70">Website by Binit Neupane</div>
       </div>
     </footer>
   );

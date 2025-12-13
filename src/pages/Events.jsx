@@ -15,13 +15,22 @@ const workshopDescription = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeqXQJhmke5LU_jaCBMKY2RcIX2Y6vh45g6bFU7WPFx32NYEA/viewform?fbclid=IwY2xjawK6AzFleHRuA2FlbQIxMABicmlkETFJSU5HSGE4SERDSVcxZ0kwAR4Y2U4jXjQg46nk_vOBYYCThEsGFj6fSQCN68t2CVrVqtKxgtVQFsWHTNtRdQ_aem_Jgu72x6J7sS5gegNGBeAvQ"
   },
   {
-    name: "Embedded Systems Workshop",
+    name: "Arduino and BLDC Motor Control Workshop",
     date: "Shrawan 8, 2082 - Shrawan 15, 2082",
     time: "5:00-7:00 PM",
     completed: 1,
-    description: "From blinking LEDs to controlling motors, learn the core of electronics in an engaging and beginner-friendly way. Whether you're curious or career-focused, this is your chance to get practical!",
+    description: "Learn the core of electronics in an engaging and beginner-friendly way. Whether you're curious or career-focused, this is your chance to get practical!",
     registrationOpen: 0,
     registrationLink: "https://tinyurl.com/ecastelectrical"
+  },
+  {
+    name: "IoT With ESP8266",
+    date: "Poush 11, 2082 - Poush 15, 2082",
+    time: "7:15-9:15 AM, 2:30-4:30 PM",
+    completed: 0,
+    description: "The sequel of Arduino and BLDC Motor Control Workshop! Learn once more, the core of electronics in an engaging and beginner-friendly way. Whether you're curious or career-focused, this is your chance to get practical!",
+    registrationOpen: 1,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeLUVwm44873d8E_hJ7auIC-gj_WdUB504xCK5iW0q83rNqvw/viewform"
   },
   {
     name: "AutoCAD Workshop",
