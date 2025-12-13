@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import HomeSlide from "../components/HomeSlide";
 import PCBSlide from "../components/PCBSlide";
 import WorkshopSlide from "../components/WorkshopSlide";
-import IotSlide from "../components/iotSlide";
+import IotSlide from "../components/IotSlide";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade, Navigation } from "swiper/modules";
