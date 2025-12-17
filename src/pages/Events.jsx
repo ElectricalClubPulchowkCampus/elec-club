@@ -15,6 +15,15 @@ const workshopDescription = [
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeqXQJhmke5LU_jaCBMKY2RcIX2Y6vh45g6bFU7WPFx32NYEA/viewform?fbclid=IwY2xjawK6AzFleHRuA2FlbQIxMABicmlkETFJSU5HSGE4SERDSVcxZ0kwAR4Y2U4jXjQg46nk_vOBYYCThEsGFj6fSQCN68t2CVrVqtKxgtVQFsWHTNtRdQ_aem_Jgu72x6J7sS5gegNGBeAvQ"
   },
   {
+    name: "One Day Basic Electronics Workshop",
+    date: "First 3 weeks of Mangsir",
+    time: "2 hrs a day",
+    completed: 1,
+    description: "From basic LED circuit to Astable Multivibrator - learn about the basic of Electronics, hands-on!",
+    registrationOpen: 0,
+    registrationLink: "https://tinyurl.com/ecastelectrical"
+  },
+  {
     name: "Arduino and BLDC Motor Control Workshop",
     date: "Shrawan 8, 2082 - Shrawan 15, 2082",
     time: "5:00-7:00 PM",

@@ -12,9 +12,9 @@ export default function IotSlide() {
 
           <div className="absolute inset-0 z-10 flex flex-row items-center justify-center">
             <div className="text-5xl p-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-400 text-center flex flex-col items-center justify-center space-y-2">
-                IoT With ESP32
+                IoT With ESP8266
                 <p className="text-white text-base pt-8 font-bold">
-                    📅 26 Nov - 1 Dec, 2025
+                    📅 26 Dec - 30 Dec, 2025
                 </p>
                 <p className="text-white text-base mt-2 font-medium">
                     Dive into the world of Internet of Things with ESP8266 Microcontroller!

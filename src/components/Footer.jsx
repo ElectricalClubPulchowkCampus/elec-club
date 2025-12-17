@@ -6,7 +6,7 @@ export default function Footer() {
           <p className="text-xl font-bold text-center">Electrical Club, Pulchowk Campus</p>
           <p className="m-5 text-base">Thank you for visiting us. Follow us:</p>
           <div className="flex space-x-5 text-4xl">
-            <a href="https://www.facebook.com/ECPulchowk" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/electricalclubpc/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com/electricalclubpc/" target="_blank" rel="noopener noreferrer">

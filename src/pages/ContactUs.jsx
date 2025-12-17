@@ -64,7 +64,7 @@ export default function ContactUs() {
                             future partner, or a curious mind, we’d love to connect and create something awesome together!
                         </p>
                         <div className="flex space-x-5 text-4xl items-center justify-center">
-                            <a href="https://www.facebook.com/ECPulchowk" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/electricalclubpc/" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-facebook-f"></i>
                             </a>
                             <a href="https://www.instagram.com/electricalclubpc/" target="_blank" rel="noopener noreferrer">
