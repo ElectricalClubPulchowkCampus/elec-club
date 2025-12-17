@@ -19,7 +19,7 @@ const workshopDescription = [
     date: "First 3 weeks of Mangsir",
     time: "2 hrs a day",
     completed: 1,
-    description: "From basic LED circuit to Astable Multivibrator - learn about the basic of Electronics, hands-on!",
+    description: "From basic LED circuit to Astable Multivibrator - learn about the basic of Electronics, hands-on! The workshop was done in multiple +2 college inside the Kathmandu Valley.",
     registrationOpen: 0,
     registrationLink: "https://tinyurl.com/ecastelectrical"
   },
