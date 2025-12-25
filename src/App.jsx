@@ -47,7 +47,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />}/>
           {/* <Route path="/registration" element={<Registration />}/> */}
         </Routes>
-        {/* <Sponsors />  */}
+        <Sponsors /> 
         <Footer />
         <GoToTopButton />
       </div>

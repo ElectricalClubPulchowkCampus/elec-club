@@ -1,92 +1,12 @@
 export default function Sponsors() {
   const sponsorGroups = [
     {
-      category: "Platinum Sponsor",
+      category: "Technology Partner",
       sponsors: [
         {
-          name: "Litmus Cables",
-          logo: "https://i.postimg.cc/cCw6JVxT/Litmus-Cables-Logo.png",
-          url: "https://www.litmus.com.np/", 
-        },
-      ],
-    },
-    {
-      category: "Associate Sponsor",
-      sponsors: [
-        {
-          name: "Nepal Power Engineering and Fabricators",
-          logo: "https://i.postimg.cc/nV90fPB7/NPEFLogo-removebg-preview.png",
-          url: "https://www.nepalpowerengineering.com.np/", 
-        },
-      ],
-    },
-    {
-      category: "Mobility Partner",
-      sponsors: [
-        {
-          name: "Tootle",
-          logo: "https://i.postimg.cc/bJ8jsyBt/Tootle-Logo.png",
-          url: "https://www.tootle.com.np/", 
-        },
-      ],
-    },
-    {
-      category: "Media Partner",
-      sponsors: [
-        {
-          name: "Edusanjal",
-          logo: "https://i.postimg.cc/bdfr3GGp/Edusanjal-Logo.png",
-          url: "https://edusanjal.com/", 
-        },
-      ],
-    },
-    {
-      category: "Green Partner",
-      sponsors: [
-        {
-          name: "The Plant Room",
-          logo: "https://i.postimg.cc/gk1Qxcw2/The-Plant-Room-Logo.png",
-          url: "https://www.instagram.com/theplantro0m/", 
-        },
-      ],
-    },
-    {
-      category: "Styling Parnter",
-      sponsors: [
-        {
-          name: "Looks Salon",
-          logo: "https://i.postimg.cc/J4j9sTLG/Looks-Salon-Logo.png",
-          url: "https://www.instagram.com/lookssalonnepal/", 
-        },
-      ],
-    },
-    {
-      category: "Momento Partner",
-      sponsors: [
-        {
-          name: "Line Academy",
-          logo: "https://i.postimg.cc/02TYLWD5/line-academy.png",
-          url: "https://www.facebook.com/LineAcademy.edu.np", 
-        },
-      ],
-    },
-    {
-      category: "Education Partner",
-      sponsors: [
-        {
-          name: "UThinkCrazy",
-          logo: "https://i.postimg.cc/t4b5svTS/uthinkcrazy.png",
-          url: "https://uthinkcrazy.com/", 
-        },
-      ],
-    },
-    {
-      category: "Fabrication Partner",
-      sponsors: [
-        {
-          name: "The Squad of Changemakers",
-          logo: "https://i.postimg.cc/pVD5mWFv/thesquadofchangemakers.jpg",
-          url: "https://www.facebook.com/thesquadofchangemakers/", 
+          name: "Botyards",
+          logo: "https://i.postimg.cc/d0BvMWBP/botyards.png",
+          url: "https://botyards.com/", 
         },
       ],
     },
@@ -96,11 +16,11 @@ export default function Sponsors() {
     <section className="py-10 px-6 border-t-2 border-gray-300 mt-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-[#5004a0] mb-16">
-          Our Proud Sponsors
+          Our Proud Sponsor            {/* make it our proud sponsors later */}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center"> */}{/*for multiple sponsors*/  }
+        <div className="flex justify-center text-center">
           {sponsorGroups.map((group, index) => (
             <div key={index}>
               <h2 className="text-base font-semibold text-gray-700 mb-6 uppercase tracking-wider border-y-2 border-gray-400 py-2">
