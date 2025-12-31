@@ -29,9 +29,7 @@ export default function Home() {
         navigation={true}
         className="w-full h-screen"
       >
-        <SwiperSlide>
-          <IotSlide />
-        </SwiperSlide>
+
         <SwiperSlide>
           <HomeSlide />
         </SwiperSlide>
@@ -40,6 +38,9 @@ export default function Home() {
         </SwiperSlide>
         <SwiperSlide>
           <WorkshopSlide/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <IotSlide />
         </SwiperSlide>
       </Swiper>
 

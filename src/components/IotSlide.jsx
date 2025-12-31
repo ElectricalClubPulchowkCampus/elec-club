@@ -20,12 +20,12 @@ export default function IotSlide() {
                     Dive into the world of Internet of Things with ESP8266 Microcontroller!
                 </p>
                 <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeLUVwm44873d8E_hJ7auIC-gj_WdUB504xCK5iW0q83rNqvw/viewform"
+                href="https://drive.google.com/drive/folders/1j6z4HXictE6_1RjrGD9T1TJgnzKRFFLZ?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-block px-8 py-3 bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-400 text-black font-semibold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
-                    Register Now!
+                    See glimpses👀
                 </a>
             </div>
           </div>
