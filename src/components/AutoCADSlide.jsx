@@ -1,4 +1,4 @@
-import backgroundImg from "../assets/images/AutoCAD.jpg";
+import backgroundImg from "../assets/images/AutoCAD.JPG";
 
 export default function AutoCADSlide() {
     return(
