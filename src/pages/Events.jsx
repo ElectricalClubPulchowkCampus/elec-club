@@ -36,29 +36,29 @@ const workshopDescription = [
     name: "IoT With ESP8266",
     date: "Poush 11, 2082 - Poush 15, 2082",
     time: "7:15-9:15 AM, 2:30-4:30 PM",
-    completed: 0,
+    completed: 1,
     description: "The sequel of Arduino and BLDC Motor Control Workshop! Learn once more, the core of electronics in an engaging and beginner-friendly way. Whether you're curious or career-focused, this is your chance to get practical!",
-    registrationOpen: 1,
+    registrationOpen: 0,
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeLUVwm44873d8E_hJ7auIC-gj_WdUB504xCK5iW0q83rNqvw/viewform"
   },
   {
     name: "AutoCAD Workshop",
-    date: "Coming soon!",
-    time: "Tick tock!",
+    date: "Magh 2, 2082 - Magh 6, 2082",
+    time: "7:30 AM - 9:30 AM",
     completed: 0,
-    description: "Master basic to intermediate 2D drafting and electrical schematics using AutoCAD. A must-have skill for design engineers!",
-    registrationOpen: 0,
-    registrationLink: ""
+    description: "Master basic building design to complex three phase electrification using AutoCAD. A must-have skill for electrical engineers!",
+    registrationOpen: 1,
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSelMe1sO9BPP8uzTnXSxUlQIJscPgUeAXRZWi6KcjAaRS5BQg/viewform"
   },
-  {
-    name: "ETAP Workshop",
-    date: "Coming soon!",
-    time: "Tick tock!",
-    completed: 0,
-    description: "Dive into electrical power system modeling, analysis, and simulation using ETAP. Perfect for electrical engineering students!",
-    registrationOpen: 0,
-    registrationLink: ""
-  },
+  // {
+  //   name: "ETAP Workshop",
+  //   date: "Coming soon!",
+  //   time: "Tick tock!",
+  //   completed: 0,
+  //   description: "Dive into electrical power system modeling, analysis, and simulation using ETAP. Perfect for electrical engineering students!",
+  //   registrationOpen: 0,
+  //   registrationLink: ""
+  // },
 ];
 
 

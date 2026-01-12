@@ -4,6 +4,7 @@ import HomeSlide from "../components/HomeSlide";
 import PCBSlide from "../components/PCBSlide";
 import WorkshopSlide from "../components/WorkshopSlide";
 import IotSlide from "../components/IotSlide";
+import AutoCADSlide from "../components/AutoCADSlide";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade, Navigation } from "swiper/modules";
@@ -29,7 +30,9 @@ export default function Home() {
         navigation={true}
         className="w-full h-screen"
       >
-
+        <SwiperSlide>
+          <AutoCADSlide />
+        </SwiperSlide>
         <SwiperSlide>
           <HomeSlide />
         </SwiperSlide>
@@ -42,6 +45,7 @@ export default function Home() {
         <SwiperSlide>
           <IotSlide />
         </SwiperSlide>
+        
       </Swiper>
 
       <motion.div

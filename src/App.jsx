@@ -5,14 +5,14 @@ import Events from "./pages/Events";
 import Media from "./pages/Media";
 import Faqs from "./pages/Faqs";
 import ContactUs from "./pages/ContactUs";
-import Registration from "./pages/Registration";
+// import Registration from "./pages/Registration";
 import Header from "./components/Header";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import GoToTopButton from "./components/GoToTopButton";
 import ScrollToTop from "./components/ScrollToTop";
 import PopupBanner from "./components/PopupBanner";
-import bannerImage from "./assets/images/register_now.jpg"
+import bannerImage from "./assets/images/register_now.png"
 import React, { useEffect, useState } from "react";
 
 
@@ -31,12 +31,12 @@ function App() {
     <>
       <ScrollToTop />
       <div className="bg-gradient-to-br from-slate-100 via-violet-100 to-fuchsia-100">
-      {/* {showPopup && (
+      {showPopup && (
         <PopupBanner
           imageUrl={bannerImage}
           onClose={() => setShowPopup(false)}
         />
-      )} */}
+      )}
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -45,9 +45,9 @@ function App() {
           <Route path="/media" element={<Media />}/>
           <Route path="/faqs" element={<Faqs />}/>
           <Route path="/contact" element={<ContactUs />}/>
-          {/* <Route path="/registration" element={<Registration />}/> */}
+          {/* <Route path="/reg" element={<Registration />}/> */}
         </Routes>
-        <Sponsors /> 
+        {/* <Sponsors />  */}
         <Footer />
         <GoToTopButton />
       </div>

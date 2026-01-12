@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { toast, Toaster } from "react-hot-toast";
 
 export default function ContactUs() {
-    const [formData, setFormData] = useState({ name: "", email: "", phonenumber: "", collegename:"", level:"", faculty: "", hopes: "", attendAllDays: "", time:"", paymentmethod:"", feedback:"", image:"" });
+    const [formData, setFormData] = useState({ name: "", email: "", phonenumber: "", collegename:"", level:"", hopes: "", attendAllDays: "", paymentmethod:"", feedback:"", image:"" });
     const [isSending, setIsSending] = useState(false);
     const [fileName, setFileName] = useState('');
 
@@ -22,7 +22,7 @@ export default function ContactUs() {
     e.preventDefault();
     setIsSending(true);
 
-    const scriptURL = "https://script.google.com/macros/s/AKfycbzfcXhnDFJS8aboev_jfSxfsPjYv1jj5NnBqs0jKZ6owb-vtrTY3wl1GZHwOI4DiuT2pA/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxZxv5RIu1MdPy4qZ5E7jqQiFxf01tlyEsmqTuEmCgQe165fUlAPkzRrNQ0JvQhrTpmqA/exec";
     
     const data = new FormData();
     data.append("name", formData.name);
@@ -30,10 +30,10 @@ export default function ContactUs() {
     data.append("phonenumber", formData.phonenumber);
     data.append("collegename", formData.collegename);
     data.append("level", formData.level);
-    data.append("faculty", formData.faculty);
+    // data.append("faculty", formData.faculty);
     data.append("hopes", formData.hopes);
     data.append("attendalldays", formData.attendAllDays);
-    data.append("time", formData.time);
+    // data.append("time", formData.time);
     data.append("paymentmethod", formData.paymentmethod);
     data.append("feedback", formData.feedback);
 
@@ -44,7 +44,7 @@ export default function ContactUs() {
         const reader = new FileReader();
         
         reader.onload = async function(event) {
-            const base64String = event.target.result.split(',')[1]; // Get base64 encoded data
+            const base64String = event.target.result; // Get base64 encoded data
             data.append("image", base64String);
             console.log("data[image] : ", data.get("image"));
 
@@ -113,19 +113,19 @@ export default function ContactUs() {
                         viewport={{ once: true, amount: 0.01 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        Registration Form : Proteus, PCB Design and Fabrication Workshop
+                        Registration Form : AutoCAD Electrical Workshop
                         <div className="text-base font-normal p-4 mt-4">
-                            <div>Welcome to the registration form for the Proteus, PCB Design and Fabrication Workshop organized by the Electrical Club, Pulchowk Campus.</div>                            
+                            <div>Welcome to the registration form for AutoCAD Electrical Workshop organized by the Electrical Club, Pulchowk Campus in association with <strong>Line Academy</strong>.</div>                            
                             <br />
-                            <div>📅 Date: 6th to 9th of Asadh</div>
+                            <div>📅 Date: 2nd to 6th of Magh</div>
                             <br />
                             <div>📍 Venue: DoEE, Pulchowk Campus</div>
                             <br />
                             <div>💸 Registration Fee: Rs. 250 (to be paid via eSewa/Siddhartha Bank Mobile Banking)</div>
                             <br />
-                            <div>This workshop includes hands-on sessions in Proteus simulation, PCB design, and fabrication — aimed at enhancing your practical electronics skills.</div>
+                            <div>The Workshop Syllabus is included <a href="https://drive.google.com/file/d/1QjaQXVFSldBivUqqC-KWGKiWZ-CkYOpG/view" target="_blank"><strong><u>here</u></strong></a>.</div>
                             <br />
-                            <div>Please fill out the following details carefully. Selected participants will be contacted with payment instructions and further updates.</div>
+                            <div>✨ Fill in the form carefully and secure your seat for this exciting learning experience!</div>
                         </div>
                     </motion.div>
 
@@ -191,19 +191,18 @@ export default function ContactUs() {
                                 required
                             >
                                 <option value="" disabled>Select Your Level</option>
-                                <option value="1st sem">1st sem</option>
-                                <option value="2nd sem">2nd sem</option>
-                                <option value="3rd sem">3rd sem</option>
-                                <option value="4th sem">4th sem</option>
-                                <option value="5th sem">5th sem</option>
-                                <option value="6th sem">6th sem</option>
-                                <option value="7th sem">7th sem</option>
-                                <option value="8th sem">8th sem</option>
-                                <option value="+2 level">+2 level</option>
+                                <option value="1st sem">Bachelors 1st sem</option>
+                                <option value="2nd sem">Bachelors 2nd sem</option>
+                                <option value="3rd sem">Bachelors 3rd sem</option>
+                                <option value="4th sem">Bachelors 4th sem</option>
+                                <option value="5th sem">Bachelors 5th sem</option>
+                                <option value="6th sem">Bachelors 6th sem</option>
+                                <option value="7th sem">Bachelors 7th sem</option>
+                                <option value="8th sem">Bachelors 8th sem</option>
                                 <option value="other">Other</option>
                             </select>
 
-                            <label className={labelClassName}>Faculty *</label>
+                            {/* <label className={labelClassName}>Faculty *</label>
                             <select
                                 name="faculty"
                                 value={formData.faculty}
@@ -223,7 +222,7 @@ export default function ContactUs() {
                                 <option value="Physical">Physical Group (+2 Level)</option>
                                 <option value="Biology">Biology Group (+2 level)</option>
                                 <option value="other">Other</option>
-                            </select>
+                            </select> */}
 
                             <label className={labelClassName}>What do you hope to learn from this workshop?</label>
                             <textarea
@@ -234,7 +233,7 @@ export default function ContactUs() {
                                 className={`${inputClassName} min-h-20 max-h-30 resize-y`}
                             />
 
-                            <label className={labelClassName}>Are you willing to attend all four days of the workshop? *</label>
+                            <label className={labelClassName}>Are you willing to attend all five days of the workshop? *</label>
                                     <div className="flex space-x-6 mt-2 mb-4"> 
                                         <div className="flex items-center border border-transparent p-2 rounded-md transition-all">
                                             <input
@@ -264,7 +263,7 @@ export default function ContactUs() {
                                         </div>
                                     </div>
 
-                            <label className={labelClassName}>What time is favorable for you? *</label>
+                            {/* <label className={labelClassName}>What time is favorable for you? *</label>
                             <div className="flex flex-col sm:flex-row sm:space-x-6 mt-2 mb-4 space-y-2 sm:space-y-0"> 
                                 <div className="flex items-center border border-transparent p-2 rounded-md transition-all">
                                     <input
@@ -305,7 +304,7 @@ export default function ContactUs() {
                                     />
                                     <label htmlFor="timeEvening" className="ml-2 block text-sm font-medium text-gray-700 cursor-pointer">5-7 PM (Evening Shift)</label>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <label className={labelClassName}>Payment Method *</label>
                             <select
@@ -322,15 +321,59 @@ export default function ContactUs() {
                             </select>
                             
                             <div className="flex flex-wrap justify-center gap-y-4 gap-x-2">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="Khalti Payment QR" className="mx-auto" />
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="Esewa Payment QR" className="mx-auto" />
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="Bank Payment QR" className="mx-auto" />
+                                    {formData.paymentmethod === "khalti" && (
+                                        <>
+                                            <img
+                                                src="/images/Dikshant_khalti.jpg"
+                                                alt="Khalti Payment QR"
+                                                className="mx-auto"
+                                            />
+                                            <img
+                                                src="/images/Nischal_Khalti.png"
+                                                alt="Khalti Payment QR"
+                                                className="mx-auto"
+                                            />
+                                            <img
+                                                src="/images/Sanjita_Khalti.png"
+                                                alt="Khalti Payment QR"
+                                                className="mx-auto"
+                                            />
+                                        </>
+                                    )}
+
+                                    {formData.paymentmethod === "esewa" && (
+                                        <>
+                                            <img
+                                                src="/images/Dikshant_esewa.jpg"
+                                                alt="Khalti Payment QR"
+                                                className="mx-auto max-h-90"
+                                            />
+                                            <img
+                                                src="/images/Nischal_esewa.png"
+                                                alt="Khalti Payment QR"
+                                                className="mx-auto max-h-90"
+                                            />
+                                            <img
+                                                src="/images/Sanjita_esewa.jpg"
+                                                alt="Khalti Payment QR"
+                                                className="mx-auto max-h-110"
+                                            />
+                                        </>
+                                    )}
+
+                                    {formData.paymentmethod === "bank" && (
+                                        <img
+                                            src="/images/Club_bank.png"
+                                            alt="Bank Payment QR"
+                                            className="h-auto"
+                                        />
+                                    )}
                             </div>
 
                             <div className="flex flex-col items-center space-x-4">
                                 <label
                                     htmlFor="file-upload"
-                                    className="cursor-pointer inline-block text-white bg-[#118811] rounded-md py-2 px-4 hover:bg-[#116611] transition-colors duration-200 m-auto"
+                                    className="cursor-pointer inline-block text-white bg-[#118811] rounded-md mt-2 py-2 px-4 hover:bg-[#116611] transition-colors duration-200 m-auto"
                                 >
                                     Upload Payment Proof
                                 </label>
@@ -339,7 +382,7 @@ export default function ContactUs() {
                                     type="file"
                                     name="image"
                                     onChange={handleFileChange}
-                                    className=""
+                                    className="hidden"
                                     accept="image/*"
                                     required
                                 />
