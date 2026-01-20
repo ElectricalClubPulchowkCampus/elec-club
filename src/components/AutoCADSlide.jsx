@@ -20,12 +20,12 @@ export default function AutoCADSlide() {
                     Everything AutoCAD Electrical that an Electrical Engineer should know! 
                 </p>
                 <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSelMe1sO9BPP8uzTnXSxUlQIJscPgUeAXRZWi6KcjAaRS5BQg/viewform"
+                href="https://drive.google.com/drive/folders/1BIe4d8RNS-jW-dOdI-Yo9Ul3zSUtp_tO?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-block px-8 py-3 bg-gradient-to-r from-cyan-300 via-purple-400 to-pink-400 text-black font-semibold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
-                    Register Now! 📝
+                    See glimpses 👀
                 </a>
             </div>
           </div>

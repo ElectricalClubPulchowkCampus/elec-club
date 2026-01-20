@@ -31,9 +31,6 @@ export default function Home() {
         className="w-full h-screen"
       >
         <SwiperSlide>
-          <AutoCADSlide />
-        </SwiperSlide>
-        <SwiperSlide>
           <HomeSlide />
         </SwiperSlide>
         <SwiperSlide>
@@ -45,7 +42,9 @@ export default function Home() {
         <SwiperSlide>
           <IotSlide />
         </SwiperSlide>
-        
+        <SwiperSlide>
+          <AutoCADSlide />
+        </SwiperSlide>       
       </Swiper>
 
       <motion.div

@@ -45,9 +45,9 @@ const workshopDescription = [
     name: "AutoCAD Workshop",
     date: "Magh 2, 2082 - Magh 6, 2082",
     time: "7:30 AM - 9:30 AM",
-    completed: 0,
+    completed: 1,
     description: "Master basic building design to complex three phase electrification using AutoCAD. A must-have skill for electrical engineers!",
-    registrationOpen: 1,
+    registrationOpen: 0,
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSelMe1sO9BPP8uzTnXSxUlQIJscPgUeAXRZWi6KcjAaRS5BQg/viewform"
   },
   // {
