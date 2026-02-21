@@ -50,15 +50,15 @@ const workshopDescription = [
     registrationOpen: 0,
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSelMe1sO9BPP8uzTnXSxUlQIJscPgUeAXRZWi6KcjAaRS5BQg/viewform"
   },
-  // {
-  //   name: "ETAP Workshop",
-  //   date: "Coming soon!",
-  //   time: "Tick tock!",
-  //   completed: 0,
-  //   description: "Dive into electrical power system modeling, analysis, and simulation using ETAP. Perfect for electrical engineering students!",
-  //   registrationOpen: 0,
-  //   registrationLink: ""
-  // },
+  {
+    name: "Second Shekhar Memorial Blood Donation Program",
+    date: "Magh 29, 2082",
+    time: "11:00 AM - 3:30 PM",
+    completed: 1,
+    description: "A blood donation program to honor the cherished memory of late Shekhar Majhi (078BEL084).",
+    registrationOpen: 0,
+    registrationLink: ""
+  },
 ];
 
 

@@ -95,20 +95,20 @@ export default function Media(){
                     viewport={{once:true, amount: 0.3 }}  
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    EC Talks
+                    EC Talks 3.0
                     <p className="text-base font-normal p-2 flex text-center">
                         EC Talks is a conversational series hosted by the Electrical Club of Pulchowk Campus, where we bring together students, alumni, and professionals to share their journeys, experiences, and insights in the field of electrical and electronics engineering. Whether it's navigating university life, exploring career paths, or diving into cutting-edge tech, EC Talks aims to educate, inspire, and connect our community through meaningful discussions and real-world stories.
                     </p>
                 </motion.div>
                 <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/lgkdX1DgGz4?si=6cgrjAsMcRwhN9ZK" 
-                    title="YouTube video player" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    className="m-auto w-[70%] h-auto aspect-video max-w-[700px] flex-wrap border-black border-4"
-                    allowFullScreen>
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/660UXsXYl60?si=QDNy21RX3IraL4sd" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
                 </iframe>
             </div>
             <motion.div 
