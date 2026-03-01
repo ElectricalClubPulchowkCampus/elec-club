@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function WorkshopCard({number, name, date, time, description, completed, registrationOpen, registrationLink}){
+export default function WorkshopCard({number, name, date, time, description, completed, registrationOpen, registrationLink, timeAvailable}){
     return(
         <motion.div
             className="relative p-6 mx-auto max-w-[800px] 
@@ -23,7 +23,7 @@ export default function WorkshopCard({number, name, date, time, description, com
             <p className="text-2xl font-bold text-fuchsia-800 drop-shadow-sm">{name}</p>
             <div className="text-purple-800 font-medium drop-shadow-sm flex flex-col">
                 <span className="font-semibold text-fuchsia-900">📅 {date}</span>
-                <span className="font-semibold text-fuchsia-900">🕒 {time}</span>
+                {timeAvailable? <span className="font-semibold text-fuchsia-900">🕒 {time}</span>:<></>}
                 {completed? <span className="font-semibold text-fuchsia-900">✅ Completed!</span>:<></>}
                 {registrationOpen? <span>🗒️&nbsp;<a href={registrationLink} className="text-[#000000] underline" target="_blank">Registration Open!</a></span>:<></>}
             </div>
